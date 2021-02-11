@@ -1,4 +1,4 @@
-bashblog
+bshblg
 ========
 
 A single Bash script to create blogs. 
@@ -62,7 +62,7 @@ Features
 Configuration
 -------------
 
-Configuration is not required for a test drive, but if you plan on running your blog with bashblog, you will
+Configuration is not required for a test drive, but if you plan on running your blog with bshblg, you will
 want to change the default titles, author names, etc, to match your own.
 
 There are two ways to configure the blog strings:
@@ -78,7 +78,7 @@ The format of the `.config` file is just one `variablename="value"` per line, ju
 function. **Please remember:** quote the values, do not declare a variable with the dollar sign, do not use 
 spaces around the equal sign.
 
-bashblog uses the `$EDITOR` environment value to open the text editor.
+bshblg uses the `$EDITOR` environment value to open the text editor.
 
 
 Detailed features

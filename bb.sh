@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
-# BashBlog, a simple blog system written in a single bash script
+###############################################################################
+# BshBlg, a multi purpose blog system written in a single forked bash script
+# (C) ForumPlayer <fp@forumplayer.dev>, 2021
+# https://github.com/forumplayer/bshblg
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+# Original repo: https://github.com/carlesfe/bashblog
 # (C) Carlos Fenollosa <carlos.fenollosa@gmail.com>, 2011-2016 and contributors
 # https://github.com/carlesfe/bashblog/contributors
 # Check out README.md for more details
+###############################################################################
 
 # Global variables
 # It is recommended to perform a 'rebuild' after changing any of this in the code
@@ -67,7 +73,7 @@ global_variables() {
     archive_index="all_posts.html"
     tags_index="all_tags.html"
 
-    # Non blogpost files. Bashblog will ignore these. Useful for static pages and custom content
+    # Non blogpost files. Bshblg will ignore these. Useful for static pages and custom content
     # Add them as a bash array, e.g. non_blogpost_files=("news.html" "test.html")
     non_blogpost_files=()
 
@@ -138,7 +144,7 @@ global_variables() {
     # The locale to use for the dates displayed on screen
     date_format="%B %d, %Y"
     date_locale="C"
-    date_inpost="bashblog_timestamp"
+    date_inpost="bshblg_timestamp"
     # Don't change these dates
     date_format_full="%a, %d %b %Y %H:%M:%S %z"
     date_format_timestamp="%Y%m%d%H%M.%S"
@@ -957,7 +963,7 @@ create_includes() {
         protected_mail=${global_email//@/&#64;}
         protected_mail=${protected_mail//./&#46;}
         echo "<div id=\"footer\">$global_license <a href=\"$global_author_url\">$global_author</a> &mdash; <a href=\"mailto:$protected_mail\">$protected_mail</a><br/>"
-        echo 'Generated with <a href="https://github.com/cfenollosa/bashblog">bashblog</a>, a single bash script to easily create blogs like this one</div>'
+        echo 'Generated with <a href="https://github.com/cfenollosa/bshblg">bshblg</a>, a single bash script to easily create blogs like this one</div>'
         } >> ".footer.html"
     fi
 }
