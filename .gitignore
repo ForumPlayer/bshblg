@@ -1,0 +1,8 @@
+drafts/
+
+*tmp*
+
+*.rss
+*.css
+*.html
+*.tar.gz

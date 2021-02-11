@@ -16,8 +16,8 @@ global_config=".config"
 # This function will load all the variables defined here. They might be overridden
 # by the 'global_config' file contents
 global_variables() {
-    global_software_name="BashBlog"
-    global_software_version="2.9"
+    global_software_name="bshblg"
+    global_software_version="1.0"
 
     # Blog title
     global_title="My fancy blog"
